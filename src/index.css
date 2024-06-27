@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.matrix {
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.matrix-row {
+  display: flex;
+}
+
+.matrix-cell {
+  flex: 1;
+  padding: 8px 15px;
+  text-align: center;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+  min-width: 2em; /* Set a fixed minimum width for each cell */
+}
+
+.matrix-cell:first-child {
+  border-left: none;
+}
+
+.matrix-row:first-child .matrix-cell {
+  border-top: none;
+}
