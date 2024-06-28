@@ -85,10 +85,20 @@ const Calculator = () => {
   const inverse = calculateInverse();
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center pt-10 animate-fadeIn">
+    <div className="min-h-screen bg-transparent-white flex flex-col items-center justify-center pt-10 animate-fadeIn relative">
+      <img
+        src="/matrix-app/matrix.png"
+        alt="Background Image"
+        className="absolute inset-0 object-cover filter opacity-20 self-center place-self-center -z-10"
+      />
       <h1 className="text-3xl font-bold mb-6 text-blue-600">
         Kalkulator Matrix
       </h1>
+      <p className="text-lg text-gray-700 mb-4 max-w-md px-5 lg:px-0 text-left lg:text-center">
+        Aplikasi kalkulator matriks ini mudah digunakan, cukup masukkan angka ke
+        dalam setiap kotak {matrixSize === 3 ? "3x3" : "2x2"}, lalu aplikasi
+        akan otomatis menghitung determinan dan inversnya secara instan.
+      </p>
       <div className="flex mb-6">
         <button
           className={`px-4 py-2 mx-2 bg-blue-500 text-white rounded transition-colors duration-300 ${

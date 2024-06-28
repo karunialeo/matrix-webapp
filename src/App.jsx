@@ -7,7 +7,7 @@ import Calculator from "./pages/Calculator";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/matrix-app/",
     element: (
       <>
         <Header />
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "quiz",
+    path: "matrix-app/quiz",
     element: (
       <>
         <Header />
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "calculator",
+    path: "matrix-app/calculator",
     element: (
       <>
         <Header />

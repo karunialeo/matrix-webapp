@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import matrixImage from "../assets/matrix.png"; // Import the image
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-6 animate-fadeIn">
+    <div className="min-h-screen bg-transparent-white flex flex-col items-center justify-center p-6 animate-fadeIn relative">
+      <img
+        src={matrixImage}
+        alt="Background Image"
+        className="absolute inset-0 object-cover filter opacity-20 self-center place-self-center -z-10"
+      />
+      {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
       <h2 className="text-3xl font-bold mb-6 text-blue-600">
         Selamat datang di aplikasi Kuis Matrix!
       </h2>
-      <p className="text-lg text-gray-700 mb-4 lg:mx-40 text-left lg:text-center">
+      <p className="text-lg text-gray-700 mb-4 max-w-2xl text-left lg:text-center">
         Tes pemahaman anda mengenai matrix dengan berbagai soal menarik yang
         telah kami sediakan. Tingkatkan kemampuan anda dalam memahami dan
         mengoperasikan matriks dengan cara yang interaktif dan menyenangkan!
@@ -24,12 +31,12 @@ const Home = () => {
       </div>
 
       <div className="flex space-x-4">
-        <Link to="/quiz">
+        <Link to="/matrix-app/quiz">
           <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300">
             Mulai Kuis
           </button>
         </Link>
-        <Link to="/calculator">
+        <Link to="/matrix-app/calculator">
           <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300">
             Buka Kalkulator
           </button>

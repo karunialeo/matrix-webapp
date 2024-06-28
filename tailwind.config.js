@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        "transparent-white": "#ffffffaa",
+        "transparent-gray": "#edededaa",
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: 0 },

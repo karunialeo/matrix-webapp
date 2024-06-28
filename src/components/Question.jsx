@@ -11,7 +11,7 @@ const Question = ({ question, options, onAnswer, questionNumber }) => {
         {options.map((option, index) => (
           <button
             key={index}
-            className="bg-gray-200 p-2 mb-2 md:mb-0 flex-1 text-center"
+            className="bg-gray-200 p-2 flex-1 flex justify-center items-center"
             onClick={() => onAnswer(option)}
           >
             <MatrixDisplay text={option.text} />

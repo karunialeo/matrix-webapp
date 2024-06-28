@@ -11,19 +11,28 @@ const Header = () => {
   return (
     <header className="bg-blue-600 text-white p-4 shadow-md fixed w-full z-10 top-0">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="hover:text-gray-200 transition-colors">
+        <Link
+          to="/matrix-app/"
+          className="hover:text-gray-200 transition-colors"
+        >
           <h1 className="text-3xl font-bold">Matrix App</h1>
         </Link>
 
         <nav className="hidden md:flex space-x-6">
-          <Link to="/" className="hover:text-gray-200 transition-colors">
+          <Link
+            to="/matrix-app/"
+            className="hover:text-gray-200 transition-colors"
+          >
             Beranda
           </Link>
-          <Link to="/quiz" className="hover:text-gray-200 transition-colors">
+          <Link
+            to="/matrix-app/quiz"
+            className="hover:text-gray-200 transition-colors"
+          >
             Kuis
           </Link>
           <Link
-            to="/calculator"
+            to="/matrix-app/calculator"
             className="hover:text-gray-200 transition-colors"
           >
             Kalkulator
@@ -54,21 +63,21 @@ const Header = () => {
       {isMobileMenuOpen && (
         <nav className="md:hidden bg-blue-600 p-4 space-y-4 animate-fadeIn">
           <Link
-            to="/"
+            to="/matrix-app/"
             className="block hover:text-gray-200 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Beranda
           </Link>
           <Link
-            to="/quiz"
+            to="/matrix-app/quiz"
             className="block hover:text-gray-200 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Kuis
           </Link>
           <Link
-            to="/calculator"
+            to="/matrix-app/calculator"
             className="block hover:text-gray-200 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
